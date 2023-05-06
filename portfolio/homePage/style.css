@@ -1,0 +1,350 @@
+body{
+    background-color: rgb(255, 255, 255);  
+    width: 85%;
+    font-family: L-PTSans-Regular;
+}
+
+@font-face {
+	font-family: L-PTSans-Regular;
+	src: local("L-PTSans-Regular") , url('./font/L-PTSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: L-PTSans-Bold;
+	src: local("L-PTSans-Bold") , url('./font/L-PTSans-Bold.ttf') format('truetype');
+}
+
+/* 導覽列區域 */
+nav{
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
+.navbar-toggler{
+    border-color: white;
+}
+
+.navbar-collapse{
+    text-align: center;
+}
+
+.navbar-brand{
+    color: rgb(50, 50, 50);
+    font-family:L-PTSans-Bold ;
+    font-size: 18px;
+    margin-left: 2%;
+    padding: 20px 0px;
+    font-weight: 500;
+}
+
+.nav-item{
+    padding: 10px 0px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.nav-link:hover{
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+}
+
+.nav-item:hover{
+  text-decoration-line: underline;
+  text-decoration-skip-ink: all;
+  text-underline-offset: 5px;
+  transition: underline 0.4s ease-in-out;
+}
+
+/* 自介區域 */
+.introArea{
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    margin-left: 15%;
+    display: flex;
+    text-align:justify; 
+    text-justify:inter-ideograph;
+    color: rgb(50, 50, 50);
+    padding: 0px 80px 50px 80px;
+    border-bottom: rgb(194, 194, 194) 1px solid;
+}
+
+.stickrs{
+    width: 180px;
+    margin-top: 50px;
+}
+
+.introText{
+    width: 650px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.sayHi{
+    font-family: L-PTSans-Bold;
+    font-size: 26px;
+}
+
+.CHintro{
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.introTextHover{
+    color: rgb(50, 50, 50) ;
+    text-decoration: white;
+}
+.introTextHover:hover{
+    background-color: rgb(50, 50, 50);
+    padding: 1px 0px;
+    color: rgb(255, 255, 255) ;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.ENintroTextHover{
+    color: rgb(50, 50, 50) ;
+}
+
+.ENintroTextHover:hover{
+    color: rgb(255, 255, 255) ;
+    background-color: rgb(50, 50, 50);
+    padding: 1px 0px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* 專案陳列區域 */
+.case1Area{
+    display: flex;
+    width: 85%;
+    margin-left: 15%;
+    background-color: rgb(255, 255, 255);
+    padding:70px 0px;
+    color: rgb(50, 50, 50) ;
+    align-items: center;
+}
+
+.case1Img{
+    width: 450px;
+}
+
+.vertical-line{
+    border-left: 1px solid rgb(50, 50, 50);
+    height: 140px;
+    margin-left: 100px;
+    margin-top: -60px;
+}
+
+.caseText{
+    margin-left: 20px;
+}
+
+.title{
+    font-family: L-PTSans-Bold;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.secondTitle{
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: -5px;
+}
+
+.caseDetailButton{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-size: 16px;
+    padding: 7px 18px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid rgb(50, 50, 50);
+    margin-top: 10px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.caseDetailButton:hover{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+/* 底部導覽列區域 */
+.underBarArea{
+    margin-left: 15%;
+    text-align: center;
+    background-color:rgb(50, 50, 50) ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.slogan{
+    font-family:L-PTSans-Bold ;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.email{
+    font-size: 20px;
+    color: white;
+}
+.email:hover{
+    color: white;
+}
+
+.copyright{
+    font-size: 14px;
+    margin-top: 25px;
+    color: white;
+}
+
+/* // 如果使用者之視窗寬度 <= 992px，將會再載入這裡的 CSS。 */
+@media screen and (max-width: 992px) {
+    .case1Img{
+        width: 350px;
+    }
+}
+
+/* // 如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS。 */
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+
+    /* 導覽列 */
+    nav{
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+    .navbar-brand{
+        margin-left: 4%;
+    }
+    .nav-item{
+        padding: 8px 0px;
+    }
+
+    /* 自介區域 */
+    .introArea{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align:justify; 
+        text-justify:inter-ideograph;
+        color: rgb(50, 50, 50);
+        margin-left: 0px;
+        padding: 0px 30px;
+    }
+    .stickrs{
+        width: 80px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .introText{
+        width: 100%;
+        margin-top: 20px ;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    .sayHi{
+        font-family: L-PTSans-Bold;
+        font-size: 26px;
+    }
+    .CHintro{
+        letter-spacing: 1px;
+    }
+    .ENintro{
+        margin-top: -8px;
+    }
+    .introTextHover{
+        color: rgb(50, 50, 50) ;
+        font-weight: bold;
+        text-decoration: white;
+    }
+    .introTextHover:hover{
+        color: rgb(255, 255, 255) ;
+    }
+
+    /* 專案陳列區域 */
+    .caseDisplayArea{
+        width: 100%;
+    }
+    .case1Area{
+        display: inline-block;
+        width: 100%;
+        margin-left: 0px;
+        background-color: rgb(255, 255, 255);
+        padding:40px 0px;
+        color: rgb(50, 50, 50) ;
+    }
+    .case1Img{
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .vertical-line{
+        display: none;
+    }
+    .caseText{
+        margin-left: 7.5%;
+        width: 85%;
+    }
+    .title{
+        font-family: L-PTSans-Bold;
+        font-size: 28px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .secondTitle{
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: -5px;
+    }
+    .caseDetailButton{
+        text-decoration: none;
+        color: rgb(50, 50, 50);
+        font-size: 16px;
+        padding: 7px 18px;
+        background-color: transparent;
+        box-shadow: none;
+        border: 1px solid rgb(50, 50, 50);
+        margin-top: 10px;
+        transition: background-color 0.4s ease-in-out;
+    }
+    .caseDetailButton:hover{
+        background-color: rgb(50, 50, 50);
+        color: white;
+    }
+
+    /* 底部導覽列區域 */
+    .underBarArea{
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+        background-color:rgb(50, 50, 50) ;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .slogan{
+        font-family:L-PTSans-Bold ;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 24px;
+    }
+    
+    .email{
+        font-size: 16px;
+        color: white;
+    }
+    .email:hover{
+        color: white;
+    }
+    
+    .copyright{
+        font-size: 12px;
+        margin-top: 15px;
+        color: white;
+    }
+  }
